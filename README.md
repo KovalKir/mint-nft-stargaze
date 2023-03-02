@@ -1,16 +1,22 @@
 # Collection structure
  
-This app suggests that your collection consists of several types of NFT (tokens in type have different ID, but the same content). Each type includes the certain number of tokens (type supply). The numbering of tokens should be based on the principle: "ID = 1 (first token of type 1) ... ID = typeSupply (last token of type1), ID = typeSupply + 1 (first token of type2) ... ID = 2 * typeSupply (last token of type2), ..., ID = (N-1) * typeSupply + 1 (first token of typeN) ... ID = N * typeSupply (last token of typeN)". 
+This app suggests that your collection consists of several types of NFT (tokens in type have different ID, but the same content). Each type includes the certain number of tokens (type supply). The numbering of tokens should be based on the principle: 
+
+```
+ID = 1 (first token of type 1) ... ID = typeSupply (last token of type1), 
+ID = typeSupply + 1 (first token of type2) ... ID = 2 * typeSupply (last token of type2), ..., 
+ID = (N-1) * typeSupply + 1 (first token of typeN) ... ID = N * typeSupply (last token of typeN)
+```
 
 ## Example
 
 Your collection has 3 types of NFTs with 1000 tokens for each type: dog (type1), cat (type2), fish (type3). 
 
-ID = 1 ... 1000 - dog (type1);
+`ID = 1 ... 1000 - dog (type1)`
 
-ID = 1001 ... 2000 - cat (type2);
+`ID = 1001 ... 2000 - cat (type2)`
 
-ID = 2001 ... 3000 - fish (type3).
+`ID = 2001 ... 3000 - fish (type3)`
 
 # Limitations
 
